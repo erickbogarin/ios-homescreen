@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.3",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.5",
-    "prettier": "^1.18.2",
+    "@types/jest": "25.2.2",
+    "@types/node": "14.0.1",
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "typescript": "3.6.2"
+    "react-scripts": "3.4.1",
+    "typescript": "3.9.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
@@ -48,7 +48,7 @@
     }
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3"
   }
 }
