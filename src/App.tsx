@@ -1,7 +1,14 @@
 import React from 'react'
 
+import HomeScreen from 'pages/HomeScreen'
+import Layout from 'shared/ui/Layout'
+
 const App: React.FC = () => {
-  return <div className="App">hi</div>
+  return (
+    <Layout>
+      <HomeScreen />
+    </Layout>
+  )
 }
 
 export default App
