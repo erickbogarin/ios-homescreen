@@ -1,6 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
+import SpringBoard from 'components/SpringBoard'
+
+import Header from 'shared/ui/Header'
+
 const homeScreenStyle = css`
   background-image: url('https://i.pinimg.com/originals/7c/33/f7/7c33f78ca6c13ab76714a9ac634f53e7.png');
   background-size: cover;
@@ -34,7 +38,10 @@ const homeScreenStyle = css`
 
 const HomeScreen = () => (
   <div css={homeScreenStyle}>
-    <div className="body"></div>
+    <Header />
+    <div className="body">
+      <SpringBoard />
+    </div>
   </div>
 )
 
