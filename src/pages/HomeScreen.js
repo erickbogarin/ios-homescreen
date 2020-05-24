@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core'
 
 import Dock from 'components/Dock.tsx'
 import SpringBoard from 'components/SpringBoard.tsx'
-import Navigation from 'components/Navigation'
+import Navigation from 'components/Navigation.tsx'
 import Header from 'shared/ui/Header'
 
 const homeScreenStyle = css`

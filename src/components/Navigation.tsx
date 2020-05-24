@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core'
 
 const navigationStyle = css`
-  ul {
+  .menu__list {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -10,7 +10,7 @@ const navigationStyle = css`
     padding: 0;
   }
 
-  li {
+  .menu__item {
     color: rgba(255, 255, 255, 0.4);
     font-size: 40px;
     line-height: 0.5;
@@ -18,7 +18,7 @@ const navigationStyle = css`
     padding: 0;
   }
 
-  li.active {
+  .menu__item.active {
     color: white;
   }
 `
@@ -26,17 +26,17 @@ const navigationStyle = css`
 function Navigation() {
   return (
     <nav css={navigationStyle}>
-      <ul>
-        <li>
+      <ul className="menu__list">
+        <li className="menu__item">
           <span role="link">·</span>
         </li>
         <li className="active">
           <span role="link">·</span>
         </li>
-        <li>
+        <li className="menu__item">
           <span role="link">·</span>
         </li>
-        <li>
+        <li className="menu__item">
           <span role="link">·</span>
         </li>
       </ul>
