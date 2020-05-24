@@ -37,9 +37,14 @@ const appItemStyle = css`
   }
 `
 
-function AppIcon({ children, isMoving = false }) {
+type AppIconProps = {
+  children: React.ReactNode
+  isMoving?: boolean
+}
+
+function AppIcon({ children, isMoving }: AppIconProps) {
   return (
-    <li className={isMoving && 'moving'} css={appItemStyle}>
+    <li className={isMoving ? 'moving' : 'idle'} css={appItemStyle}>
       {children}
     </li>
   )

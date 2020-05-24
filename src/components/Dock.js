@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
-import AppIcon from './AppIcon'
+import AppIcon from './AppIcon.tsx'
 
 const dockStyle = css`
   background: linear-gradient(
