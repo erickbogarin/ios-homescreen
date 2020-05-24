@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
+import Dock from 'components/Dock'
 import SpringBoard from 'components/SpringBoard'
 
 import Header from 'shared/ui/Header'
@@ -41,6 +42,8 @@ const HomeScreen = () => (
     <Header />
     <div className="body">
       <SpringBoard />
+
+      <Dock />
     </div>
   </div>
 )
