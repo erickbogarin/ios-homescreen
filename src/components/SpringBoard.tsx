@@ -2,9 +2,8 @@
 import { jsx, css } from '@emotion/core'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 
-import AppIcon from './AppIcon'
-
 import apps from 'shared/data/apps.json'
+import AppIcon from './AppIcon'
 
 const appListStyle = css`
   padding: 0 15px;
@@ -17,9 +16,13 @@ const appListStyle = css`
 
 const onDragEnd = () => {}
 
-const SpringBoard = ({ className }) => (
+type SpringBoardProps = {
+  className?: string
+}
+
+const SpringBoard = ({ className }: SpringBoardProps) => (
   <DragDropContext onDragEnd={onDragEnd}>
-    <Droppable droppableId={3231}>
+    <Droppable droppableId={'springBoard'}>
       {(provided) => (
         <div className={className}>
           <ul css={appListStyle}>

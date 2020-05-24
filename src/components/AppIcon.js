@@ -37,7 +37,7 @@ const appItemStyle = css`
   }
 `
 
-function AppIcon({ children, isMoving }) {
+function AppIcon({ children, isMoving = false }) {
   return (
     <li className={isMoving && 'moving'} css={appItemStyle}>
       {children}

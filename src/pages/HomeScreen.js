@@ -2,8 +2,8 @@
 import { jsx, css } from '@emotion/core'
 
 import Dock from 'components/Dock'
-import SpringBoard from 'components/SpringBoard'
-
+import SpringBoard from 'components/SpringBoard.tsx'
+import Navigation from 'components/Navigation'
 import Header from 'shared/ui/Header'
 
 const homeScreenStyle = css`
@@ -28,11 +28,11 @@ const homeScreenStyle = css`
     height: calc(100% - 22px);
   }
 
-  .appList {
+  .springBoard {
     flex-grow: 1;
   }
 
-  .footer {
+  .dock {
     margin-bottom: 5px;
   }
 `
@@ -41,9 +41,10 @@ const HomeScreen = () => (
   <div css={homeScreenStyle}>
     <Header />
     <div className="body">
-      <SpringBoard />
+      <SpringBoard className="springBoard" />
 
-      <Dock />
+      <Navigation />
+      <Dock className="dock" />
     </div>
   </div>
 )
