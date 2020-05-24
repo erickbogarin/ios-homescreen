@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
-import Dock from 'components/Dock'
+import Dock from 'components/Dock.tsx'
 import SpringBoard from 'components/SpringBoard.tsx'
 import Navigation from 'components/Navigation'
 import Header from 'shared/ui/Header'

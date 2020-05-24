@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
-import AppIcon from './AppIcon.tsx'
+import AppIcon from './AppIcon'
 
 const dockStyle = css`
   background: linear-gradient(
@@ -29,8 +29,11 @@ const dockStyle = css`
     padding: 0;
   }
 `
+type DockProps = {
+  className?: string
+}
 
-function Dock({ className }) {
+function Dock({ className }: DockProps) {
   return (
     <footer className={className} css={dockStyle}>
       <ul>
