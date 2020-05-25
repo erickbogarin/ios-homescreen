@@ -1,62 +1,70 @@
-[
-  {
-    "image": "img/weather.png",
-    "label": "Weather"
-  },
-  {
-    "image": "img/wallet.png",
-    "label": "Wallet"
-  },
-  {
-    "image": "img/reminders.png",
-    "label": "Reminders"
-  },
-  {
-    "image": "img/calendar.png",
-    "label": "Calendar"
-  },
-  {
-    "image": "img/app-store.png",
-    "label": "App Store"
-  },
-  {
-    "image": "img/settings.png",
-    "label": "Settings"
-  },
-  {
-    "image": "img/maps.png",
-    "label": "Maps"
-  },
-  {
-    "image": "img/tv.png",
-    "label": "Tv"
-  },
-  {
-    "image": "img/stocks.png",
-    "label": "Stocks"
-  },
-  {
-    "image": "img/home.png",
-    "label": "Home"
-  },
-  {
-    "image": "img/camera.png",
-    "label": "Camera"
-  },
-  {
-    "image": "img/notes.png",
-    "label": "Notes"
-  },
-  {
-    "image": "img/clock.png",
-    "label": "Clock"
-  },
-  {
-    "image": "img/health.png",
-    "label": "Health"
-  },
-  {
-    "image": "img/news.png",
-    "label": "News"
-  }
-]
+{
+  "0": [
+    {
+      "image": "img/weather.png",
+      "label": "Weather"
+    },
+    {
+      "image": "img/wallet.png",
+      "label": "Wallet"
+    },
+    {
+      "image": "img/reminders.png",
+      "label": "Reminders"
+    },
+    {
+      "image": "img/calendar.png",
+      "label": "Calendar"
+    }
+  ],
+  "1": [
+    {
+      "image": "img/app-store.png",
+      "label": "App Store"
+    },
+    {
+      "image": "img/settings.png",
+      "label": "Settings"
+    },
+    {
+      "image": "img/maps.png",
+      "label": "Maps"
+    },
+    {
+      "image": "img/tv.png",
+      "label": "Tv"
+    }
+  ],
+  "2": [
+    {
+      "image": "img/stocks.png",
+      "label": "Stocks"
+    },
+    {
+      "image": "img/home.png",
+      "label": "Home"
+    },
+    {
+      "image": "img/camera.png",
+      "label": "Camera"
+    },
+    {
+      "image": "img/notes.png",
+      "label": "Notes"
+    }
+  ],
+  "3": [
+    {
+      "image": "img/clock.png",
+      "label": "Clock"
+    },
+    {
+      "image": "img/health.png",
+      "label": "Health"
+    },
+    {
+      "image": "img/news.png",
+      "label": "News"
+    }
+  ]
+}

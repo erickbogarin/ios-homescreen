@@ -1,7 +1,14 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
+import styled from '@emotion/styled'
+import {
+  DraggableStateSnapshot,
+  DraggableProvided,
+  DraggingStyle,
+  NotDraggingStyle,
+} from 'react-beautiful-dnd'
 
-const appItemStyle = css`
+const AppLogo = styled.li`
   position: relative;
   margin-top: 10px;
 
@@ -40,13 +47,36 @@ const appItemStyle = css`
 type AppIconProps = {
   children: React.ReactNode
   isMoving?: boolean
+  provided?: DraggableProvided
+  snapshot?: DraggableStateSnapshot
 }
 
-function AppIcon({ children, isMoving }: AppIconProps) {
+const getStyle = (
+  style?: DraggingStyle | NotDraggingStyle,
+  snapshot?: DraggableStateSnapshot,
+) => {
+  return {
+    ...style,
+    position: 'static' as 'static',
+  }
+}
+
+function AppIcon({
+  children,
+  isMoving = true,
+  provided,
+  snapshot,
+}: AppIconProps) {
   return (
-    <li className={isMoving ? 'moving' : 'idle'} css={appItemStyle}>
+    <AppLogo
+      ref={(ref) => provided?.innerRef(ref)}
+      {...provided?.draggableProps}
+      {...provided?.dragHandleProps}
+      className={isMoving ? 'moving' : 'idle'}
+      style={getStyle(provided?.draggableProps?.style, snapshot)}
+    >
       {children}
-    </li>
+    </AppLogo>
   )
 }
 

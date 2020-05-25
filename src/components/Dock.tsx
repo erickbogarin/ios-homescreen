@@ -34,24 +34,7 @@ type DockProps = {
 }
 
 function Dock({ className }: DockProps) {
-  return (
-    <footer className={className} css={dockStyle}>
-      <ul>
-        <AppIcon isMoving>
-          <img src="img/phone.png" alt="phone" />
-        </AppIcon>
-        <AppIcon>
-          <img src="img/messages.png" alt="message" />
-        </AppIcon>
-        <AppIcon>
-          <img src="img/mail.png" alt="mail" />
-        </AppIcon>
-        <AppIcon>
-          <img src="img/itunes.png" alt="itunes" />
-        </AppIcon>
-      </ul>
-    </footer>
-  )
+  return <footer className={className} css={dockStyle}></footer>
 }
 
 export default Dock
