@@ -16,10 +16,7 @@ const homeScreenStyle = css`
   border-radius: 25px;
   border: 5px solid black;
 
-  position: absolute;
-  top: 50%;
   width: 300px;
-  transform: translateY(-50%);
 
   .body {
     display: flex;

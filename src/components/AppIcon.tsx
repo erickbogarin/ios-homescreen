@@ -1,14 +1,9 @@
-/** @jsx jsx */
-import { jsx, css } from '@emotion/core'
+import React from 'react'
 import styled from '@emotion/styled'
-import {
-  DraggableStateSnapshot,
-  DraggableProvided,
-  DraggingStyle,
-  NotDraggingStyle,
-} from 'react-beautiful-dnd'
+import { DraggableStateSnapshot, DraggableProvided } from 'react-beautiful-dnd'
+import { App } from 'model/App'
 
-const AppLogo = styled.li`
+const AppLogo = styled.div`
   position: relative;
   margin-top: 10px;
 
@@ -16,7 +11,7 @@ const AppLogo = styled.li`
     margin-left: 5px;
   }
 
-  &.moving {
+  &.moving > img {
     animation: shake 1.25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -26,6 +21,7 @@ const AppLogo = styled.li`
   &.moving:before {
     position: absolute;
     content: '𝗑';
+    z-index: 100;
     color: #c0312b;
     font-size: 12px;
     background-color: #fcc28b;
@@ -45,37 +41,24 @@ const AppLogo = styled.li`
 `
 
 type AppIconProps = {
-  children: React.ReactNode
   isMoving?: boolean
   provided?: DraggableProvided
   snapshot?: DraggableStateSnapshot
+  app: App
+  onClick?: () => void
 }
 
-const getStyle = (
-  style?: DraggingStyle | NotDraggingStyle,
-  snapshot?: DraggableStateSnapshot,
-) => {
-  return {
-    ...style,
-    position: 'static' as 'static',
-  }
-}
-
-function AppIcon({
-  children,
-  isMoving = true,
-  provided,
-  snapshot,
-}: AppIconProps) {
+function AppIcon({ app, isMoving = false, provided, ...props }: AppIconProps) {
   return (
     <AppLogo
       ref={(ref) => provided?.innerRef(ref)}
       {...provided?.draggableProps}
       {...provided?.dragHandleProps}
-      className={isMoving ? 'moving' : 'idle'}
-      style={getStyle(provided?.draggableProps?.style, snapshot)}
+      {...props}
+      className={isMoving ? 'moving' : 'iddle'}
     >
-      {children}
+      <img src={app.image} alt={app.label} />
+      <span>{app.label}</span>
     </AppLogo>
   )
 }

@@ -26,9 +26,8 @@ export const reorderSpringBoardMap = ({
       ...springBoardMap,
       [source.droppableId]: reordered,
     }
-    return {
-      springBoardMap: result,
-    }
+
+    return result
   }
 
   // moving to different list
@@ -38,7 +37,7 @@ export const reorderSpringBoardMap = ({
   // insert into next
   next.splice(destination.index, 0, target)
 
-  if (next.length >= 4) {
+  if (next.length > 4) {
     next.splice(destination.index + 1, 1)
     current.splice(source.index, 0, replacement)
   }
@@ -49,7 +48,5 @@ export const reorderSpringBoardMap = ({
     [destination.droppableId]: next,
   }
 
-  return {
-    springBoardMap: result,
-  }
+  return result
 }
