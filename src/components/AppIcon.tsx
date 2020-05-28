@@ -18,10 +18,9 @@ const AppLogo = styled.div`
     animation-fill-mode: backwards;
   }
 
-  &.moving:before {
+  button {
     position: absolute;
-    content: '𝗑';
-    z-index: 100;
+    background: transparent;
     color: #c0312b;
     font-size: 12px;
     background-color: #fcc28b;
@@ -30,6 +29,15 @@ const AppLogo = styled.div`
     left: -8%;
     padding: 1px 5px;
     margin: 0;
+    border: none;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: 0.1s;
+  }
+
+  &.moving button {
+    opacity: 1;
   }
 
   span {
@@ -46,9 +54,16 @@ type AppIconProps = {
   snapshot?: DraggableStateSnapshot
   app: App
   onClick?: () => void
+  onRemove?: () => void
 }
 
-function AppIcon({ app, isMoving = false, provided, ...props }: AppIconProps) {
+function AppIcon({
+  app,
+  isMoving = false,
+  provided,
+  onRemove,
+  ...props
+}: AppIconProps) {
   return (
     <AppLogo
       ref={(ref) => provided?.innerRef(ref)}
@@ -59,6 +74,7 @@ function AppIcon({ app, isMoving = false, provided, ...props }: AppIconProps) {
     >
       <img src={app.image} alt={app.label} />
       <span>{app.label}</span>
+      <button onClick={onRemove}>x</button>
     </AppLogo>
   )
 }

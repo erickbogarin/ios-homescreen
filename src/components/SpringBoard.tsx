@@ -61,6 +61,17 @@ const SpringBoard = ({ className }: SpringBoardProps) => {
     )
   }
 
+  function removeApp(row: string, index: number) {
+    const newAppRow = appMap[row]
+
+    newAppRow.splice(index, 1)
+
+    setAppMap({
+      ...appMap,
+      [row]: newAppRow,
+    })
+  }
+
   return (
     <div className={className}>
       <DragDropContext
@@ -93,6 +104,7 @@ const SpringBoard = ({ className }: SpringBoardProps) => {
                       {(dragProvided, dragSnapshot) => (
                         <AppIcon
                           onClick={() => setIsDragging(false)}
+                          onRemove={() => removeApp(row, index)}
                           provided={dragProvided}
                           snapshot={dragSnapshot}
                           isMoving={isDragging}
