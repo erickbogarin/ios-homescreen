@@ -16,8 +16,11 @@ const globalStyles = css`
     font-family: -apple-system, system-ui, BlinkMacSystemFont;
 
     background: #171617;
-    margin: 0 auto;
-    max-width: 300px;
+
+    @media (min-width: 480px) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
   }
 
   @keyframes shake {

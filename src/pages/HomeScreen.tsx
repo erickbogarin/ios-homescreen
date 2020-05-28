@@ -10,13 +10,18 @@ const homeScreenStyle = css`
   background-image: url('https://i.pinimg.com/originals/7c/33/f7/7c33f78ca6c13ab76714a9ac634f53e7.png');
   background-size: cover;
 
-  height: 100vh;
-  max-height: 600px;
+  position: fixed;
+
+  height: 100%;
+  width: 100vw;
 
   border-radius: 25px;
   border: 5px solid black;
 
-  width: 300px;
+  @media (min-width: 480px) {
+    max-height: 600px;
+    width: 300px;
+  }
 
   .body {
     display: flex;

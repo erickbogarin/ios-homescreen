@@ -6,6 +6,19 @@ import { App } from 'model/App'
 const AppLogo = styled.div`
   position: relative;
   margin-top: 10px;
+  text-align: center;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: 480px) {
+    img {
+      height: auto;
+      width: auto;
+    }
+  }
 
   &:not(:nth-of-type(4n + 1)) {
     margin-left: 5px;
@@ -26,7 +39,7 @@ const AppLogo = styled.div`
     background-color: #fcc28b;
     border-radius: 50%;
     top: -5%;
-    left: -8%;
+    left: 10%;
     padding: 1px 5px;
     margin: 0;
     border: none;
@@ -42,6 +55,7 @@ const AppLogo = styled.div`
 
   span {
     color: white;
+    display: block;
     font-weight: 300;
     font-size: 12px;
     animation-iteration-count: infinite;
