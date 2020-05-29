@@ -5,7 +5,6 @@ import { App } from 'model/App'
 
 const AppLogo = styled.div`
   position: relative;
-  margin-top: 10px;
   text-align: center;
 
   img {
@@ -46,10 +45,12 @@ const AppLogo = styled.div`
     cursor: pointer;
 
     opacity: 0;
-    transition: 0.1s;
+    visibility: hidden;
+    transition: 0.2s;
   }
 
   &.moving button {
+    visibility: visible;
     opacity: 1;
   }
 

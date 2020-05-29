@@ -29,6 +29,7 @@ type SpringBoardProps = {
 const SpringBoardStyle = styled.div`
   padding: 0 15px;
   margin: 0;
+  margin: 10px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(min-content, max-content);
