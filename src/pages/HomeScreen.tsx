@@ -8,6 +8,8 @@ import Header from 'shared/ui/Header'
 import useScrollDrag from 'shared/hooks/useScrollDrag'
 import { MutableRefObject } from 'react'
 
+import apps from 'shared/data/apps.json'
+
 const homeScreenStyle = css`
   background-image: url('https://i.pinimg.com/originals/7c/33/f7/7c33f78ca6c13ab76714a9ac634f53e7.png');
   background-size: cover;
@@ -65,9 +67,9 @@ const HomeScreen = () => {
       <Header />
       <div className="body">
         <div className="springBoard" {...base}>
-          <SpringBoard />
-          <SpringBoard />
-          <SpringBoard />
+          {apps.map((appRow, index) => (
+            <SpringBoard key={index} apps={appRow} />
+          ))}
         </div>
 
         <Navigation scrollRef={ref as MutableRefObject<HTMLDivElement>} />

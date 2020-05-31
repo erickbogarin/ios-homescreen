@@ -9,12 +9,10 @@ import {
   DropResult,
 } from 'react-beautiful-dnd'
 
-import AppIcon from './AppIcon'
 import { AppRow, App } from 'model/App'
 import { reorderSpringBoardMap } from 'utils/reorder'
 import prop from 'utils/prop'
-
-import apps from 'shared/data/apps.json'
+import AppIcon from './AppIcon'
 
 type ContainerProps = {
   isDraggingOver: boolean
@@ -24,6 +22,7 @@ const Container = styled.div<ContainerProps>``
 
 type SpringBoardProps = {
   className?: string
+  apps: AppRow
 }
 
 const SpringBoardStyle = styled.div`
@@ -42,7 +41,7 @@ const SpringBoardStyle = styled.div`
   }
 `
 
-const SpringBoard = ({ className }: SpringBoardProps) => {
+const SpringBoard = ({ className, apps }: SpringBoardProps) => {
   const [appMap, setAppMap] = useState<AppRow>(apps)
   const [isDragging, setIsDragging] = useState(false)
 
