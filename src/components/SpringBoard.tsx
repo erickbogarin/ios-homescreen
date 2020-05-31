@@ -27,13 +27,19 @@ type SpringBoardProps = {
 }
 
 const SpringBoardStyle = styled.div`
-  padding: 0 15px;
-  margin: 0;
-  margin: 10px 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(min-content, max-content);
-  list-style-type: none;
+  scroll-snap-align: start;
+  position: relative;
+  min-width: 100%;
+
+  .appList {
+    padding: 0 15px;
+    margin: 0;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    list-style-type: none;
+  }
 `
 
 const SpringBoard = ({ className }: SpringBoardProps) => {
@@ -74,7 +80,7 @@ const SpringBoard = ({ className }: SpringBoardProps) => {
   }
 
   return (
-    <div className={className}>
+    <SpringBoardStyle className={className}>
       <DragDropContext
         onDragStart={() => setIsDragging(true)}
         onDragEnd={onDragEnd}
@@ -95,7 +101,7 @@ const SpringBoard = ({ className }: SpringBoardProps) => {
                 ref={dropProvided.innerRef}
                 {...dropProvided.droppableProps}
               >
-                <SpringBoardStyle ref={dropProvided.innerRef}>
+                <div className="appList" ref={dropProvided.innerRef}>
                   {prop(appMap, row).map((app: App, index: number) => (
                     <Draggable
                       key={app.label}
@@ -114,13 +120,13 @@ const SpringBoard = ({ className }: SpringBoardProps) => {
                       )}
                     </Draggable>
                   ))}
-                </SpringBoardStyle>
+                </div>
               </Container>
             )}
           </Droppable>
         ))}
       </DragDropContext>
-    </div>
+    </SpringBoardStyle>
   )
 }
 
