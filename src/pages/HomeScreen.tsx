@@ -11,7 +11,7 @@ import { MutableRefObject } from 'react'
 import apps from 'shared/data/apps.json'
 
 const homeScreenStyle = css`
-  background-image: url('https://i.pinimg.com/originals/7c/33/f7/7c33f78ca6c13ab76714a9ac634f53e7.png');
+  background-image: url('img/homescreen.webp');
   background-size: cover;
 
   position: fixed;
