@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { HomeStyles } from '~/components/HomeStyles'
+
 export default function Home() {
   return (
     <div>
@@ -8,7 +10,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>works</main>
+      <main>
+        <HomeStyles>
+          <div className="body"></div>
+        </HomeStyles>
+      </main>
     </div>
   )
 }
