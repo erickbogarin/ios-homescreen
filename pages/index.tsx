@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import { HomeStyles } from '~/components/HomeStyles'
+import Header from '~/shared/ui/Header'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main>
         <HomeStyles>
+          <Header />
           <div className="body"></div>
         </HomeStyles>
       </main>
