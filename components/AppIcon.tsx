@@ -3,7 +3,6 @@ import styled from '@emotion/styled'
 import { DraggableStateSnapshot, DraggableProvided } from 'react-beautiful-dnd'
 
 import { App } from 'model/App'
-import Icon from '~/shared/ui/Icon'
 
 const AppLogo = styled.div`
   position: relative;
@@ -81,7 +80,7 @@ function AppIcon({
       {...props}
       className={isMoving ? 'moving' : 'iddle'}
     >
-      <Icon name={app.image} />
+      <img src={app.image} alt={app.label} />
       <span>{app.label}</span>
       <button onClick={onRemove}>x</button>
     </AppLogo>
