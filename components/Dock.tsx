@@ -35,20 +35,20 @@ type DockProps = {
 
 const allApps = [
   {
-    image: 'img/weather.png',
-    label: 'Weather',
+    image: 'phone',
+    label: 'Phone',
   },
   {
-    image: 'img/wallet.png',
-    label: 'Wallet',
-  },
-  {
-    image: 'img/reminders.png',
+    image: 'reminders',
     label: 'Reminders',
   },
   {
-    image: 'img/calendar.png',
-    label: 'Calendar',
+    image: 'mail',
+    label: 'Mail',
+  },
+  {
+    image: 'itunes',
+    label: 'Music',
   },
 ]
 

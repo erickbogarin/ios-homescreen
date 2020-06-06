@@ -2,37 +2,37 @@
   {
     "0": [
       {
-        "image": "img/weather.png",
+        "image": "weather",
         "label": "Weather"
       },
       {
-        "image": "img/wallet.png",
+        "image": "wallet",
         "label": "Wallet"
       },
       {
-        "image": "img/reminders.png",
+        "image": "reminders",
         "label": "Reminders"
       },
       {
-        "image": "img/calendar.png",
+        "image": "calendar",
         "label": "Calendar"
       }
     ],
     "1": [
       {
-        "image": "img/app-store.png",
+        "image": "app-store",
         "label": "App Store"
       },
       {
-        "image": "img/settings.png",
+        "image": "settings",
         "label": "Settings"
       },
       {
-        "image": "img/maps.png",
+        "image": "maps",
         "label": "Maps"
       },
       {
-        "image": "img/tv.png",
+        "image": "tv",
         "label": "Tv"
       }
     ],
@@ -42,33 +42,33 @@
   {
     "0": [
       {
-        "image": "img/stocks.png",
+        "image": "stocks",
         "label": "Stocks"
       },
       {
-        "image": "img/home.png",
+        "image": "home",
         "label": "Home"
       },
       {
-        "image": "img/camera.png",
+        "image": "camera",
         "label": "Camera"
       },
       {
-        "image": "img/notes.png",
+        "image": "notes",
         "label": "Notes"
       }
     ],
     "1": [
       {
-        "image": "img/clock.png",
+        "image": "clock",
         "label": "Clock"
       },
       {
-        "image": "img/health.png",
+        "image": "health",
         "label": "Health"
       },
       {
-        "image": "img/news.png",
+        "image": "news",
         "label": "News"
       }
     ],
