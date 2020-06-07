@@ -61,6 +61,7 @@ type AppIconProps = {
   provided?: DraggableProvided
   snapshot?: DraggableStateSnapshot
   app: App
+  showLabel?: boolean
   onClick?: () => void
   onRemove?: () => void
 }
@@ -68,6 +69,7 @@ type AppIconProps = {
 function AppIcon({
   app,
   isMoving = false,
+  showLabel = true,
   provided,
   onRemove,
   ...props
@@ -81,7 +83,7 @@ function AppIcon({
       className={isMoving ? 'moving' : 'iddle'}
     >
       <img src={app.image} alt={app.label} />
-      <span>{app.label}</span>
+      {showLabel && <span>{app?.label}</span>}
       <button onClick={onRemove}>x</button>
     </AppLogo>
   )

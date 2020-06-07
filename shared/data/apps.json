@@ -2,77 +2,150 @@
   {
     "0": [
       {
-        "image": "img/weather.png",
-        "label": "Weather"
-      },
-      {
-        "image": "img/wallet.png",
-        "label": "Wallet"
-      },
-      {
-        "image": "img/reminders.png",
-        "label": "Reminders"
+        "image": "img/facetime.png",
+        "label": "Facetime"
       },
       {
         "image": "img/calendar.png",
         "label": "Calendar"
+      },
+      {
+        "image": "img/photos.png",
+        "label": "Photos"
+      },
+      {
+        "image": "img/camera.png",
+        "label": "Camera"
       }
     ],
     "1": [
       {
-        "image": "img/app-store.png",
-        "label": "App Store"
+        "image": "img/calculator.png",
+        "label": "Calculator"
       },
       {
-        "image": "img/settings.png",
-        "label": "Settings"
+        "image": "img/clock.png",
+        "label": "Clock"
       },
       {
         "image": "img/maps.png",
         "label": "Maps"
       },
       {
-        "image": "img/tv.png",
-        "label": "Tv"
+        "image": "img/weather.png",
+        "label": "Weather"
       }
     ],
-    "2": [],
-    "3": []
-  },
-  {
-    "0": [
+    "2": [
       {
-        "image": "img/stocks.png",
-        "label": "Stocks"
-      },
-      {
-        "image": "img/home.png",
-        "label": "Home"
-      },
-      {
-        "image": "img/camera.png",
-        "label": "Camera"
+        "image": "img/reminders.png",
+        "label": "Reminders"
       },
       {
         "image": "img/notes.png",
         "label": "Notes"
-      }
-    ],
-    "1": [
-      {
-        "image": "img/clock.png",
-        "label": "Clock"
       },
       {
-        "image": "img/health.png",
-        "label": "Health"
+        "image": "img/stocks.png",
+        "label": "Stocks"
       },
       {
         "image": "img/news.png",
         "label": "News"
       }
     ],
-    "2": [],
+    "3": [
+      {
+        "image": "img/ibooks.png",
+        "label": "Books"
+      },
+      {
+        "image": "img/reddit.png",
+        "label": "Reddit"
+      },
+      {
+        "image": "img/app-store.png",
+        "label": "App Store"
+      },
+      {
+        "image": "img/apple-tv.png",
+        "label": "TV"
+      }
+    ],
+    "4": [
+      {
+        "image": "img/health.png",
+        "label": "Health"
+      },
+      {
+        "image": "img/home.png",
+        "label": "Home"
+      },
+      {
+        "image": "img/wallet.png",
+        "label": "Wallet"
+      },
+      {
+        "image": "img/settings.png",
+        "label": "Settings"
+      }
+    ]
+  },
+  {
+    "0": [
+      {
+        "image": "img/instagram.png",
+        "label": "Instagram"
+      },
+      {
+        "image": "img/skype.png",
+        "label": "Skype"
+      },
+      {
+        "image": "img/tumblr.png",
+        "label": "Tumblr"
+      },
+      {
+        "image": "img/youtube.png",
+        "label": "Youtube"
+      }
+    ],
+    "1": [
+      {
+        "image": "img/slack.png",
+        "label": "Slack"
+      },
+      {
+        "image": "img/snapchat.png",
+        "label": "Snapchat"
+      },
+      {
+        "image": "img/pinterest.png",
+        "label": "Pinterest"
+      },
+      {
+        "image": "img/paypal.png",
+        "label": "Paypal"
+      }
+    ],
+    "2": [
+      {
+        "image": "img/linkedin.png",
+        "label": "Linkedin"
+      },
+      {
+        "image": "img/facebook.png",
+        "label": "Facebook"
+      },
+      {
+        "image": "img/twitter.png",
+        "label": "Twitter"
+      },
+      {
+        "image": "img/messenger.png",
+        "label": "Messenger"
+      }
+    ],
     "3": []
   }
 ]

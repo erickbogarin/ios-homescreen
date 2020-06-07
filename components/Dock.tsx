@@ -35,20 +35,20 @@ type DockProps = {
 
 const allApps = [
   {
-    image: 'img/weather.png',
-    label: 'Weather',
+    image: 'img/phone.png',
+    label: 'phone',
   },
   {
-    image: 'img/wallet.png',
-    label: 'Wallet',
+    image: 'img/mail.png',
+    label: 'mail',
   },
   {
-    image: 'img/reminders.png',
-    label: 'Reminders',
+    image: 'img/messages.png',
+    label: 'messages',
   },
   {
-    image: 'img/calendar.png',
-    label: 'Calendar',
+    image: 'img/spotify.png',
+    label: 'spotify',
   },
 ]
 
@@ -138,6 +138,7 @@ function Dock({ className }: DockProps) {
                       snapshot={dragSnapshot}
                       isMoving={isDragging}
                       app={app}
+                      showLabel={false}
                     />
                   )}
                 </Draggable>
