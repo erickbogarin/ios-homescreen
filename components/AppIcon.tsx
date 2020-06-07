@@ -83,7 +83,7 @@ function AppIcon({
       {...props}
       className={isMoving ? 'moving' : 'iddle'}
     >
-      <img src={app.image} alt={app.label} />
+      <img src={app.image} alt={app.label} loading="lazy" />
       {showLabel && <span>{app?.label}</span>}
       <button onClick={onRemove}>x</button>
     </AppLogo>
