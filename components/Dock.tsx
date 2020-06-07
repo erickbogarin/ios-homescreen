@@ -16,6 +16,11 @@ import reorder from 'utils/reorder'
 import { App } from 'model/App'
 import AppIcon from './AppIcon'
 
+import phone from 'public/img/phone.png'
+import mail from 'public/img/mail.png'
+import messages from 'public/img/messages.png'
+import spotify from 'public/img/spotify.png'
+
 const dockStyle = css`
   background: linear-gradient(
     235deg,
@@ -35,19 +40,19 @@ type DockProps = {
 
 const allApps = [
   {
-    image: 'img/phone.png',
+    image: phone,
     label: 'phone',
   },
   {
-    image: 'img/mail.png',
+    image: mail,
     label: 'mail',
   },
   {
-    image: 'img/messages.png',
+    image: messages,
     label: 'messages',
   },
   {
-    image: 'img/spotify.png',
+    image: spotify,
     label: 'spotify',
   },
 ]
