@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { DraggableStateSnapshot, DraggableProvided } from 'react-beautiful-dnd'
+import { shake } from 'config/global'
 
 import { App } from 'model/App'
 
@@ -21,7 +22,7 @@ const AppLogo = styled.div`
     margin-left: 5px;
   }
   &.moving > img {
-    animation: shake 1.25s;
+    animation: ${shake} 1.25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: backwards;
