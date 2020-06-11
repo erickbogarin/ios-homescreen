@@ -2,91 +2,91 @@
   {
     "0": [
       {
-        "image": "img/facetime.png",
+        "image": "img/facetime.webp",
         "label": "Facetime"
       },
       {
-        "image": "img/calendar.png",
+        "image": "img/calendar.webp",
         "label": "Calendar"
       },
       {
-        "image": "img/photos.png",
+        "image": "img/photos.webp",
         "label": "Photos"
       },
       {
-        "image": "img/camera.png",
+        "image": "img/camera.webp",
         "label": "Camera"
       }
     ],
     "1": [
       {
-        "image": "img/calculator.png",
+        "image": "img/calculator.webp",
         "label": "Calculator"
       },
       {
-        "image": "img/clock.png",
+        "image": "img/clock.webp",
         "label": "Clock"
       },
       {
-        "image": "img/maps.png",
+        "image": "img/maps.webp",
         "label": "Maps"
       },
       {
-        "image": "img/weather.png",
+        "image": "img/weather.webp",
         "label": "Weather"
       }
     ],
     "2": [
       {
-        "image": "img/reminders.png",
+        "image": "img/reminders.webp",
         "label": "Reminders"
       },
       {
-        "image": "img/notes.png",
+        "image": "img/notes.webp",
         "label": "Notes"
       },
       {
-        "image": "img/stocks.png",
+        "image": "img/stocks.webp",
         "label": "Stocks"
       },
       {
-        "image": "img/news.png",
+        "image": "img/news.webp",
         "label": "News"
       }
     ],
     "3": [
       {
-        "image": "img/ibooks.png",
+        "image": "img/ibooks.webp",
         "label": "Books"
       },
       {
-        "image": "img/reddit.png",
+        "image": "img/reddit.webp",
         "label": "Reddit"
       },
       {
-        "image": "img/app-store.png",
+        "image": "img/app-store.webp",
         "label": "App Store"
       },
       {
-        "image": "img/apple-tv.png",
+        "image": "img/apple-tv.webp",
         "label": "TV"
       }
     ],
     "4": [
       {
-        "image": "img/health.png",
+        "image": "img/health.webp",
         "label": "Health"
       },
       {
-        "image": "img/home.png",
+        "image": "img/home.webp",
         "label": "Home"
       },
       {
-        "image": "img/wallet.png",
+        "image": "img/wallet.webp",
         "label": "Wallet"
       },
       {
-        "image": "img/settings.png",
+        "image": "img/settings.webp",
         "label": "Settings"
       }
     ]
@@ -94,55 +94,55 @@
   {
     "0": [
       {
-        "image": "img/instagram.png",
+        "image": "img/instagram.webp",
         "label": "Instagram"
       },
       {
-        "image": "img/skype.png",
+        "image": "img/skype.webp",
         "label": "Skype"
       },
       {
-        "image": "img/tumblr.png",
+        "image": "img/tumblr.webp",
         "label": "Tumblr"
       },
       {
-        "image": "img/youtube.png",
+        "image": "img/youtube.webp",
         "label": "Youtube"
       }
     ],
     "1": [
       {
-        "image": "img/slack.png",
+        "image": "img/slack.webp",
         "label": "Slack"
       },
       {
-        "image": "img/snapchat.png",
+        "image": "img/snapchat.webp",
         "label": "Snapchat"
       },
       {
-        "image": "img/pinterest.png",
+        "image": "img/pinterest.webp",
         "label": "Pinterest"
       },
       {
-        "image": "img/paypal.png",
+        "image": "img/paypal.webp",
         "label": "Paypal"
       }
     ],
     "2": [
       {
-        "image": "img/linkedin.png",
+        "image": "img/linkedin.webp",
         "label": "Linkedin"
       },
       {
-        "image": "img/facebook.png",
+        "image": "img/facebook.webp",
         "label": "Facebook"
       },
       {
-        "image": "img/twitter.png",
+        "image": "img/twitter.webp",
         "label": "Twitter"
       },
       {
-        "image": "img/messenger.png",
+        "image": "img/messenger.webp",
         "label": "Messenger"
       }
     ],
