@@ -1,30 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# :iphone: Mobile Home Screen
+> A simple web app sumulating a mobile device home screen
 
-## Getting Started
+Demo site is here: [Mobile Home Screen](https://ios-homescreen-ml96cpahg.now.sh/)
 
-First, run the development server:
+# Getting Started
 
-```bash
-npm run dev
-# or
-yarn dev
+## Prerequisites
+
+You’ll need to have Node 8.10.0 or later on your local development machine (but it’s not required on the server). You can use nvm (macOS/Linux) or nvm-windows to easily switch Node versions between different projects.
+
+## Installing
+
+Clone this repo and install it's dependencies.
+
+```
+$ git clone https://github.com/erickbogarin/mobile-homescreen
+
+# open the folder
+$ cd mobile-homescreen
+$ yarn install or npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running in development mode
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+# serve with hot reload at localhost:3000
+$ yarn dev or npm run dev
+```
 
-## Learn More
+## Generating a production build
 
-To learn more about Next.js, take a look at the following resources:
+```
+# build for production and launch server
+$ yarn build or npm run build
+$ yarn start or npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Features
+- SSR
+- PWA
+- Drag and drop
+- Functional components with hooks
+- Written in TypeScript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Check vercel guide to depoly this app from [here](https://nextjs.org/learn/basics/deploying-nextjs-app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Built With
+- [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Next.js](https://nextjs.org/) - Statically generated and server-rendered React applications
+- [emotion](https://sass-lang.com/) - a library designed for writing css styles with JavaScript.
+- [Emotion](https://emotion.sh/) - JavaScript Testing Framework
+- [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) - Beautiful and accessible drag and drop for lists with React
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Improvement opportunities
+
+- Increase Test Coverage (unit, integration, e2e)
+- Document UI components
+- Remove Dead/Zombie Code
+
+## Questions
+
+Feel free to open any issue.
