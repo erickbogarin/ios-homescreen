@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import styled from '@emotion/styled'
 import {
   DragDropContext,
@@ -13,6 +13,7 @@ import { AppRow, App } from 'model/App'
 import { reorderSpringBoardMap } from 'utils/reorder'
 import prop from 'utils/prop'
 import AppIcon from './AppIcon'
+import useOnClickOutside from '~/shared/hooks/useOnClickOutside'
 
 type ContainerProps = {
   isDraggingOver: boolean
@@ -29,6 +30,8 @@ const SpringBoardStyle = styled.div`
   scroll-snap-align: start;
   position: relative;
   min-width: 100%;
+  height: fit-content;
+
   .appList {
     padding: 0 15px;
     margin: 0;
@@ -41,8 +44,12 @@ const SpringBoardStyle = styled.div`
 `
 
 const SpringBoard = ({ className, apps }: SpringBoardProps) => {
+  const springBoardRef = useRef()
+
   const [appMap, setAppMap] = useState<AppRow>(apps)
   const [isDragging, setIsDragging] = useState(false)
+
+  useOnClickOutside(springBoardRef, () => setIsDragging(false))
 
   const onDragEnd = (result: DropResult) => {
     if (!result.destination) {
@@ -78,7 +85,7 @@ const SpringBoard = ({ className, apps }: SpringBoardProps) => {
   }
 
   return (
-    <SpringBoardStyle className={className}>
+    <SpringBoardStyle ref={springBoardRef} className={className}>
       <DragDropContext
         onDragStart={() => setIsDragging(true)}
         onDragEnd={onDragEnd}
