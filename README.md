@@ -50,8 +50,7 @@ Check vercel guide to depoly this app from [here](https://nextjs.org/learn/basic
 ## Built With
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Next.js](https://nextjs.org/) - Statically generated and server-rendered React applications
-- [emotion](https://sass-lang.com/) - a library designed for writing css styles with JavaScript.
-- [Emotion](https://emotion.sh/) - JavaScript Testing Framework
+- [Emotion](https://emotion.sh/) - a library designed for writing css styles with JavaScript.
 - [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) - Beautiful and accessible drag and drop for lists with React
 
 ## Improvement opportunities
