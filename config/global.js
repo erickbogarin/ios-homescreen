@@ -6,19 +6,30 @@ export const globalStyles = (
       html {
         box-sizing: border-box;
       }
+
       *,
       *:before,
       *:after {
         box-sizing: inherit;
       }
+
       body {
         margin: 0;
         padding: 0;
         font-family: -apple-system, system-ui, BlinkMacSystemFont;
         background: #171617;
+
         @media (min-width: 480px) {
           max-width: 300px;
           margin: 0 auto;
+        }
+      }
+
+      main {
+        @media (min-width: 480px) {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
         }
       }
     `}
