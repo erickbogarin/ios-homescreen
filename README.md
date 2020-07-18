@@ -1,5 +1,13 @@
 # :iphone: Mobile Home Screen
+
 > A simple web app sumulating a mobile device home screen
+
+<div align="center">
+  <img src="./public/img/react.png" width="55" alt="React" />
+  <img src="./public/img/nextjs.png" width="55" alt="NextJS" />
+  <img src="./public/img/emotion.png" width="55" alt="EmotionJS" />
+  <img src="./public/img/ts.png" width="55" alt="TypeScript" />
+</div>
 
 Demo site is here: [Mobile Home Screen](https://ios-homescreen-ml96cpahg.now.sh/)
 
@@ -37,6 +45,7 @@ $ yarn start or npm start
 ```
 
 # Features
+
 - SSR
 - PWA
 - Drag and drop
@@ -48,6 +57,7 @@ $ yarn start or npm start
 Check vercel guide to depoly this app from [here](https://nextjs.org/learn/basics/deploying-nextjs-app)
 
 ## Built With
+
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Next.js](https://nextjs.org/) - Statically generated and server-rendered React applications
 - [Emotion](https://emotion.sh/) - a library designed for writing css styles with JavaScript.
