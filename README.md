@@ -6,6 +6,8 @@
     <img src="./public/img/demo.gif" alt="Demo" />
 </div>
 
+Demo site is here: [iOS Home Screen](https://ios-homescreen.now.sh/)
+
 # Built With
 
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
